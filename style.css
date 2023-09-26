@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+.container{
+    display: flex;
+    padding-top: 4%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.left-side{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1%;
+}
+.items{
+    align-self: flex-end;
+    margin: 1%;
+}
+.selected-image img{
+    width: 100%;
+    height: 100%;
+    border-color: #e2e2e2;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.thumbnails{
+    margin: 5%;
+    display: flex;
+    max-width: 200px;
+}
+.thumbnail img{
+    width: 90%;
+    height: 100%;
+    
+    border-color: #004c98;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.right-side{
+    width: 100%;
+    height: 100%;
+    border-color: #e2e2e2;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    height: 1px;
+    background-color: #ddd;
+    width: 85%;
+    align-self: center;
+}
+.right-side h5{
+    flex: 1;
+    width: 100%;
+    font-size: large;
+    color: #687175;
+    align-self: center;
+    justify-self: center;
+}
+#ref{
+    align-self: center;
+    color: #687175;
+}
+#aval{
+    align-self: center;
+}
+.price{
+    align-self: center;
+    font-size: xx-large;
+}
+.parcelado{
+    align-self: center;
+}
+.purch{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+.amount{
+    width:fit-content;
+    align-items: center;
+    gap: 20px;
+    border-color: #e2e2e2;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 2%;
+}
+#comprar{
+    height: 50%;
+    background-color: #59C00B;
+    align-self: center;
+    flex: 1;
+    margin: 2%;
+}
+#revenda{
+    background-color: #004c98;
+    margin: 20px;
+    width: 80%;
+    align-self: center;
+}
+.frete{
+    align-self: center;
+}
+#calculador-de-frete{
+    width: 60%;
+    margin: 5%;
+}
+#current-img{
+    width: 100%;
+    height: 100%;
+    border-color: #e2e2e2;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+#container-buttons{
+    gap: 2%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.buttons{
+    width: 30%;
+}
+.buttons a{
+    text-decoration: none;
+}
+#oque{
+    margin-top: 2%;
+    width: 50%;
+    background-color: #004C98;
+    display: flex;
+}
+#oque-bg{
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/77578021_l.jpg");
+}
+.texto-oque{
+    width: 60%;
+    background-color: #004c98;
+    color: #FFFFFF;
+    margin-left: 10%;
+}
+.texto-oque h1{
+    margin-top: 2%;
+}
+#mockup-capa{
+    width: 100%;
+    height: 100%;
+}
+#beneficios{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/96686892_l.jpg");   
+    background-size: 100% 100%;
+    padding-top: 5%;
+    padding-left: 60%;
+    padding-bottom: 5%;
+    display: flex;
+}
+#caixa{
+    color: #FFFFFF;
+    width:  80%;
+    height: 100%;
+    background-color: #004C98;
+    display: inline-table;
+}
+#como-usar{
+    width: 100%;
+    height: 100%;
+    background-color: #83BDD6;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+#como-usar h1{
+    color: #004C98;
+}
+#como-usar h2{
+    color: #004C98;
+}
+#steps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.rec{
+    display:block;
+    width: 80%;
+    height: 10%;
+    margin-left: 2%;
+    background-color: #004C98;
+    border-radius: 6%;
+}
+.passo{
+    color: #FFFFFF;
+}
+.diluicao{
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: flex;
+}
+.linha-dilu{
+    height: 1px;
+    background-color: #004C98;
+    width: 35%;
+    align-self: center;
+}
+.diluicao h2{
+    justify-self: center;
+    color: #004C98;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#img-dilu{
+    size: 20%;
+}
+#como-usar p{
+    color: #004C98;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 0;
+}
+#descricao{
+    color: #004C98;
+    background-color: #B4DBEC;
+    justify-content: center;
+    display: flex;
+    border-radius: 2%;
+    margin-left: 5%;
+}
+.descricao1{
+    margin-top: 5%;
+}
+.descricao2 p{
+    margin-top: 7%;
+    width: 60%;
+    height: 10%;
+    flex-wrap: wrap;
+}
+.precaucoes{
+    justify-content: space-between;
+    align-content: space-around;
+    display: flex;
+    background-color: #83BDD6;
+    color: #004C98;
+}
+#luva{
+    margin-left: 10%;
+    margin-right: 20%;
+}
+.precaucoes h1{
+    margin-top: 5%;
+}
+#precaucoes-texto p{
+    color: #FFFFFF;
+}
+#quem-e{
+    background-color: #004C98;
+    color: #FFFFFF;
+    justify-items: center;
+}
+@media(max-width:800px){
+    .container{
+        flex-wrap: wrap-reverse;
+    }
+    #oque{
+        flex-wrap: wrap;
+    }
+    #steps{
+        flex-wrap: wrap;
+    }
+    #container-buttons{
+        flex-wrap: wrap;
+    }
+    .descricao2{
+        flex-wrap: wrap;
+    }
+    #descricao{
+        flex-wrap: wrap;
+    }
+}

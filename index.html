@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delluca</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <section>
+            
+            <div class="container">
+                <div class="left-side">
+                    <div class="items">
+                        <div class="selected-image col-12 col-md-12">
+                            <img class="img-fluid" src="images/mockup_super_pos_obra_principal_5l.png" alt="" id="current-img">
+                        </div>
+                    </div>
+                    
+                    <div class="items col-4 col-md-3">
+                        <div class="thumbnails">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="images/mockup_super_pos_obra_principal_5l.png" alt="" onclick="changeImg(this)">
+                            </div>
+                        </div>
+                        
+                        <div class="thumbnails">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="images/mockup-com-capa.png" alt="" onclick="changeImg(this)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side col-4 col-md-5">
+                    <h5>SUPER PÓS OBRA 5L - REMOVE SUJIDADES </h5>
+                    <p id="ref">REF: 14543183</p>
+                    <p id="aval">(45) Avaliações</p>
+                    <div class="line"></div>
+                    <span class="price"><b>R$75,00</b></span>
+                    <span class="parcelado">em até <b>12x</b> de <b>R$7,19</b></span>
+                    <div class="purch">
+                        <div class="amount">
+                            <button type="button" class="btn btn-light" onclick="subAmount()">-</button>
+                            <span id="amount-added">1</span>
+                            <button type="button" class="btn btn-light" onclick="addAmount()">+</button>
+                        </div>
+                        <button type="button" class="btn btn-success" id="comprar"><b>Comprar</b></button>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="revenda">Revenda e Lucre</button>
+                    <div class="line"></div>
+                    <p class="frete"><b>Frete e prazo de entrega</b></p>
+                    <div id="calculador-de-frete" class="input-group mb">
+                        <input type="text" class="form-control" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button"><b>CALCULAR</b></button>
+                        </div>
+                      </div>
+                </div>
+                <br>
+            </div>
+            <div class="container" id="container-buttons">
+                <button type="button" class="buttons btn btn-outline-primary"><a href="#oque"><b>O que é?</b></a></button>
+                <button type="button" class="buttons btn btn-outline-primary"><a href="#beneficios"><b>Benefícios do Super Pós Obra?</b></a></button>
+                <button type="button" class="buttons btn btn-outline-primary"><a href="#como-usar"><b>Como usar?</b></a></button>
+                <button type="button" class="buttons btn btn-outline-primary"><a href="#descricao"><b>Descrição</b></a></button>
+                <button type="button" class="buttons btn btn-outline-primary"><a href="#quem-e"><b>Quem é a policlean oirad?</b></a></button>
+            </div>
+        </section>
+        <div id="oque-bg">
+            <div id="oque">
+                <div class="texto-oque col-7 col-md-7">
+                    <h1><b>O que é?</b></h1>
+                    <p>Detergente desincrustante pós obra.</p>
+                    <p>Indicado para limpeza pesada das sujidades do pós-obra, principalmente de resíduos como: excesso de rejunte, argamassa, cimento, gesso, terra e respingos de tinta*.</p>
+                    <p>*Somente respingos recentes de tintas à base de água</p>
+                    <h1><b>Indicação de uso</b></h1>
+                    <p>Ideal para uso em superfícies laváveis e em pisos de porcelanato, cerâmicos, cotto/lajotas,
+                        cimentícios, granito, granilite, pastilhas, azulejos, antiderrapantes e
+                        pedras porosas, equipamentos como betoneiras e também materiais usados
+                        em uma reforma ou construção.</p>
+                    <h1><b>Tipos de superfícies que podem ser tratadas:</b></h1>
+                    <p>Devido a versatilidade do produto, ele pode ser utilizado em todo tipo de piso lavável. 
+                        Para pisos que possuem acabamento com brilho, o ideal é utilizar a 
+                        diluição de limpeza leve e aplicar em pequenas partes por vez, para que o produto não seque sobre o piso.</p>
+                </div>
+                <div id="mockup-capa" class="col-12">
+                    <img class="img-fluid" src="images/mockup-com-capa.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="beneficios">
+            <div id="caixa" class="col-6">
+                <h1>Benefícios do pós obra:</h1>
+                <p>Remove os resíduos de obra com eficácia e sem agredir as superfícies; </p>
+                <p>Ideal em ambientes com excesso de concreto, cimento, reboco, argamassa, cal, rejuntes, gesso e terra em obras;</p> 
+                <p>Remove respingos de tintas de base água recentes em pisos não porosos;</p>
+                <p>Muito versátil: Ótimo para quem presta serviços (uso profissional). 
+                Excelente para residências (uso doméstico); Acabamento perfeito para sua obra.</p>
+            </div>
+        </div>
+        <div id="como-usar">
+            <h1>Como usar?</h1>
+            <div id="steps">
+                <div class="passo">
+                    <div class="rec">Diluir de acordo com o grau de sujidade. Não recomendamos a utilização do produto puro</div>
+                </div>
+                <div class="passo">
+                    <div class="rec">Espalhar o produto e esfregar com o auxílio de uma vassoura</div>
+                </div>
+                <div class="passo">
+                    <div class="rec">Deixar agir de 5 a 10 minutos tomando cuidado para não secar o produto</div>
+                </div>
+                <div class="passo">
+
+                    <div class="rec">Enxaguar com água em abundância até retirar todo o produto</div>
+                </div>
+                <div class="passo">
+                    <div class="rec">Repetir a operação se necessário</div>
+                </div>
+            </div>
+            <br>
+            <div class="diluicao">
+                <div class="linha-dilu"></div>
+                <h2>Diluição</h2>
+                <div class="linha-dilu"></div>
+            </div>
+            <div id="img-dilu">
+                <img class="img-fluid" src="images/diluicao.png">
+            </div>
+            <br>
+            <h2>O que fazer após a limpeza?</h2>
+            <p class="col-md-5">
+                Após o término da limpeza, recomendamos que seja aplicado detergente neutro por toda a superfície, 
+                    para que possíveis resíduos de ácidos sejam neutralizados e tenham suas ações interrompidas. 
+                    Quando o ácido fica agindo sobre o piso, ele tende a penetrar pelos poros e atingir toda propriedade 
+                    que está abaixo daquela camada de superfície, deixando-o com manchas irreversíveis.
+            </p>
+            <div class="col-10" id="descricao">
+                <div class="descricao1">
+                    <b>Descrição</b>
+                </div>
+                <div class="descricao2">
+                    <p>• Embalagem: 1 garrafão de 5 litros </p>
+                    <p>• Produto concentrado: 1 litro rende até 10 litros </p>
+                    <p>• Produto registrado na ANVISA </p>
+                </div>
+            </div>
+        </div>
+        <div class="precaucoes">
+            <img id="luva" class="img-fluid col-4" src="images/luva.png" alt="">
+            <div id="precaucoes-texto">
+                <h1>Precauções</h1>
+                <p class="col-6">
+                    Para sua segurança, é necessário o uso de EPI´s para manusear o produto. 
+                    Por se tratar de um produto à base de ácido, recomendamos uso de luvas de proteção, botas ou sapatos fechados,
+                     óculos e máscara. Lave as mãos cuidadosamente após o manuseio. Em caso de contato com a pele ou 
+                     olhos lave cuidadosamente com água corrente durante vários minutos.
+                </p>
+            </div>
+        </div>
+        <div id="quem-e">
+            <h1 class="col-6">Quem é a Policlean Oirad</h1>
+            <p class="col-6">Somos uma empresa 100% brasileira, de fabricação própria. Iniciamos nossas atividades em 1965, 
+                ainda com o nome Oirad®, produzindo basicamente produtos domissanitários. </p>
+            <p class="col-6">
+                Impulsionados pela busca permanente de inovação e evolução tecnológica, a linha de produção da Policlean foi sendo gradativamente ampliada para atender às necessidades de nossos clientes, 
+                contendo 7 categorias: Automotivo, Profissional, Lavanderia, Limpeza Geral, Piscinas e Tratamento de Pisos.
+            </p>
+            <p class="col-6">
+                Nossa unidade fabril, localizada em Campinas (SP), opera de acordo com as Boas Práticas de Fabricação, 
+                onde dispomos de dois mil e quinhentos m² de área instalada, para podermos oferecer um portfólio com mais de 120 itens. 
+            </p>
+            <p class="col-6">
+                Todos os nossos produtos seguem o mais alto controle de qualidade desde sua produção até a entrega, atendendo 
+                não apenas às exigências dos órgãos controladores, mas principalmente àquele que é nosso principal agente fiscalizador: você. 
+            </p>
+        </div>
+        <section>
+
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
